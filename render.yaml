@@ -2,9 +2,9 @@ name: ghost-chess-king-server
 runtime: node
 runtimeVersion: 18
 
-buildCommand: npm install
+buildCommand: pnpm install
 
-startCommand: npm start
+startCommand: pnpm start
 
 envVars:
   - key: NODE_ENV
