@@ -227,3 +227,7 @@ app.get("/health", (req, res) => {
 app.get("/", (req, res) => {
   res.json({ message: "Ghost Chess King Server is running" });
 });
+
+server.listen(PORT, () => {
+  console.log(`서버 실행 중: ${PORT}`);
+});
