@@ -1,0 +1,14 @@
+name: ghost-chess-king-server
+runtime: node
+runtimeVersion: 18
+
+buildCommand: npm install
+
+startCommand: npm start
+
+envVars:
+  - key: NODE_ENV
+    value: production
+  - key: CORS_ORIGIN
+    value: https://your-frontend-url.com
+    sync: false
