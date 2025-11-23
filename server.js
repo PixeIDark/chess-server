@@ -223,6 +223,7 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
-server.listen(PORT, () => {
-  console.log(`서버 실행 중: ${PORT}`);
+// 루트 경로 추가
+app.get("/", (req, res) => {
+  res.json({ message: "Ghost Chess King Server is running" });
 });
